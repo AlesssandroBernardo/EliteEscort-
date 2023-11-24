@@ -205,3 +205,62 @@ db.guardaespaldas.insertMany([
     ]
   }
 ]);
+db.solicitudes.insertMany([
+  {
+    "_id_solicitud": ObjectId(),
+    "fecha_inicio": ISODate("2023-11-17T14:30:00Z"),
+    "fecha_fin": ISODate("2023-11-17T18:30:00Z"),
+    "servicio": "Cuidado de vivienda",
+    "id_cliente":'6552fcff8a0fb31c45a17bdc',
+    "id_vehiculo":'6553044f8a0fb31c45a17be1',
+    "guardaespaldas": [{"_id_guardaespalda": '6553086f8a0fb31c45a17bee',"nombre": "Pedro","apellido": "Martinez"}]
+  },
+  
+  {
+    "_id_solicitud": ObjectId(),
+    "fecha_inicio": ISODate("2023-11-18T10:00:00Z"),
+    "fecha_fin": ISODate("2023-11-18T14:00:00Z"),
+    "servicio": "Monitoreo de seguridad",
+    "id_cliente": "6552fcff8a0fb31c45a17bdd",
+    "id_vehiculo": "6553044f8a0fb31c45a17be2",
+    "guardaespaldas": [
+      { "_id_guardaespalda": "6553086f8a0fb31c45a17beb","nombre": "Maria","apellido": "Gomez",}
+    ]
+  },
+  {
+    "_id_solicitud": ObjectId(),
+    "fecha_inicio": ISODate("2023-11-19T15:30:00Z"),
+    "fecha_fin": ISODate("2023-11-19T19:30:00Z"),
+    "servicio": "Seguridad en eventos",
+    "id_cliente": "6552fcff8a0fb31c45a17bde",
+    "id_vehiculo": "6553044f8a0fb31c45a17be3",
+    "guardaespaldas": [
+      {  "_id_guardaespalda": "6553086f8a0fb31c45a17bec","nombre": "Carlos","apellido": "Rodriguez" },
+      {  "_id_guardaespalda": "6553086f8a0fb31c45a17bed","nombre": "Ana","apellido": "Lopez"}
+    ]
+  },
+  {
+    "_id_solicitud": ObjectId(),
+    "fecha_inicio": ISODate("2023-11-20T12:00:00Z"),
+    "fecha_fin": ISODate("2023-11-20T16:00:00Z"),
+    "servicio": "Patrullaje nocturno",
+    "id_cliente": "6552fcff8a0fb31c45a17bdf",
+    "id_vehiculo": null,
+    "guardaespaldas": [
+      {  "_id_guardaespalda": "6553086f8a0fb31c45a17bed","nombre": "Ana","apellido": "Lopez"}
+    ]
+  },
+  {
+    "_id_solicitud": ObjectId(),
+    "fecha_inicio": ISODate("2023-11-21T08:00:00Z"),
+    "fecha_fin": ISODate("2023-11-21T12:00:00Z"),
+    "servicio": "Acompañamiento personal",
+    "id_cliente": "6552fcff8a0fb31c45a17bdc",
+    "id_vehiculo": "6553044f8a0fb31c45a17be0",
+    "guardaespaldas": [
+      { "_id_guardaespalda": "6553086f8a0fb31c45a17bee","nombre": "Pedro","apellido": "Martinez" },
+      {  "_id_guardaespalda": "6553086f8a0fb31c45a17bed","nombre": "Ana","apellido": "Lopez"}
+    ]
+  }
+]);
+
